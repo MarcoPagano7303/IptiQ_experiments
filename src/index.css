@@ -1,13 +1,134 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  max-width: 976px;
+  margin: 126px auto 64px auto;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;;
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 34px;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;;
+  text-align: center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.link {
+  font-family: 'Poppins', sans-serif;;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 24px;
+  color: #3d7786;
+  text-decoration: none;
+}
+
+.main-lang {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto 0 auto;
+}
+
+.main-title {
+  max-width: 255px;
+  margin: 0 auto 24px auto;
+}
+
+.single-title {
+  height: 4em;
+  margin: 0 0 16px 0;
+}
+
+.sec-lang {
+  display: flex;
+  margin: 64px auto 0 auto;
+  gap: 0px 25px;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 601px) {
+  .sec-lang {
+    max-width: 450px;
+    flex-wrap: wrap;
+    gap: 24px 24px;
+  }
+
+  .single-comp {
+    max-width: 213px;
+  }
+
+  .container {
+    margin-top: 64px;
+  }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 1px) {
+  h1 {
+    font-size: 28px;
+    line-height: 36px;
+    margin: 0 auto 16px auto;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 24px 0;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .link {
+    margin-top: 16px;
+  }
+
+  .single-comp {
+    max-width: 151px;
+    margin: 0 auto 0 auto;
+  }
+
+  .container {
+    margin-top: 64px;
+  }
+
+  .sec-lang {
+    max-width: 327px;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+  }
+
+  br {
+    display: none;
+  }
+
+  .sub-title {
+    max-width: 308px;
+    margin: 0 auto 0 auto;
+  }
 }
